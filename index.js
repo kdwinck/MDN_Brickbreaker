@@ -20,9 +20,12 @@ let y = canvas.height - 30;
 // ball radius
 let ballRadius = 10;
 
+// declare ball movement speed
+let speed = 3;
+
 // create movement (direction) values
-let dx = 3;
-let dy = -3;
+let dx = speed;
+let dy = -(speed);
 
 // create brick values
 let brickRowCount = 3;
@@ -134,8 +137,8 @@ let draw = () => {
 let resetBall = () => {
   x = canvas.width / 2;
   y = canvas.height - 30;
-  dx = 3;
-  dy = -3;
+  dx = speed;
+  dy = -(speed);
   paddleX = (canvas.width - paddleWidth) / 2;
 }
 
